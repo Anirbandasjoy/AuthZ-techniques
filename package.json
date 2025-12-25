@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "build": "tsc",
-    "typecheck": "tsc --noEmit"
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.23.0",
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "@types/node": "^22.14.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
   }
 }
