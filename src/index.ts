@@ -19,4 +19,11 @@ export const Permissions: Record<string, string[]> = {
   user: ["product:read"],
 } as const;
 
-new PermissionManager();
+const user = {
+  id: "123",
+  name: "Joy das",
+  roles: ["user", "premium_user"],
+  permissions: ["product:read", "premium:review"],
+};
+
+new PermissionManager(user);
